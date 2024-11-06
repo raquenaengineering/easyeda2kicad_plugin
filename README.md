@@ -39,7 +39,6 @@ A KiCad plugin that allows you to easily import parts (symbols, footprints, and 
 
 8. **Add libraries in KiCad**  
    Lastly, we just need to tell KiCad where to find the parts you import!
-
   - In KiCad, Go to Preferences > Configure Paths, and add the environment variables `EASYEDA2KICAD` :
     - Windows : `C:/Users/your_username/Documents/Kicad/easyeda2kicad/`,
     - Linux : `/home/your_username/Documents/Kicad/easyeda2kicad/`
