@@ -30,11 +30,11 @@ A KiCad plugin that allows you to easily import parts (symbols, footprints, and 
    Ensure `LCSC Importer.py` is not inside any subfolder.
 
 5. **Install dependencies**  
-   When you first launch KiCad, you may be missing one or more dependencies to run the plugin inside KiCad. Install these using pip.
-   On Windows you may have to install this through the _KiCad Command Promt_ found in programs/KiCadX/.
+   When you first launch KiCad, you may be missing one or more dependencies to run the plugin. Install these using pip.
+   On Windows you may have to install them through the _KiCad Command Promt_ found in programs/KiCadX/.
 
 6. **Run the plugin**  
-   Once all dependencies are installed, run the plugin from the top menu bar in the PCB editor, and import your first component!
+   Once all dependencies are installed, run the plugin by clicking the LCSC icon in the top menu bar in the PCB editor, and import your first component!
    This will generate the required libraries, KiCad needs to import your parts.
 
 8. **Add libraries in KiCad**  
