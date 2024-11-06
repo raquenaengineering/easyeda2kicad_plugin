@@ -45,23 +45,23 @@ except ImportError as e:
     logging.error(f"Dependency check failed: {e}")
     raise e  # Stop execution if dependencies are missing
 
-# Add the `easyeda2kicad_plugin` folder to sys.path to make it importable
-easyeda_path = os.path.join(os.path.dirname(__file__), "easyeda2kicad_plugin")
+# Add the `easyeda2kicad` folder to sys.path to make it importable
+easyeda_path = os.path.join(os.path.dirname(__file__), "easyeda2kicad")
 sys.path.insert(0, easyeda_path)
 
 try:
-    from easyeda2kicad_plugin.__main__ import main  # import the main function from easyeda2kicad_plugin
-    logging.info("Imported easyeda2kicad_plugin successfully")
+    from easyeda2kicad.__main__ import main  # import the main function from easyeda2kicad
+    logging.info("Imported easyeda2kicad successfully")
 except Exception as e:
-    logging.error(f"Failed to import easyeda2kicad_plugin: {e}")
-    wx.MessageBox(f"Error loading easyeda2kicad_plugin:\n{e}", "Import Error", style=wx.ICON_ERROR)
+    logging.error(f"Failed to import easyeda2kicad: {e}")
+    wx.MessageBox(f"Error loading easyeda2kicad:\n{e}", "Import Error", style=wx.ICON_ERROR)
     raise e  # Stop execution if import fails
 
 class EasyEDAImporterPlugin(pcbnew.ActionPlugin):
     def defaults(self):
         self.name = "LCSC Part Importer"
         self.category = "Utility"
-        self.description = "Import a part from LCSC to KiCad using easyeda2kicad_plugin"
+        self.description = "Import a part from LCSC to KiCad using easyeda2kicad"
         self.show_toolbar_button = True  # optional, defaults to False
         self.icon_file_name = os.path.join(easyeda_path, "lcsc_logo.png")
         logging.info("Plugin defaults set")
@@ -75,7 +75,7 @@ class EasyEDAImporterPlugin(pcbnew.ActionPlugin):
             part_number = dialog.GetValue().strip()
             logging.info(f"User entered part number: {part_number}")
             
-            # Run easyeda2kicad_plugin's main function with the part number
+            # Run easyeda2kicad's main function with the part number
             try:
                 result = main(["--full", f"--lcsc_id={part_number}"])  # Pass arguments as needed
                 logging.info(f"Part imported successfully: {result}")
