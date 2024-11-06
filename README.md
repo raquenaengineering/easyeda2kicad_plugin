@@ -1,6 +1,6 @@
-# LCSC Importer for KiCad
+# EasyEda / LCSC Part Importer for KiCad!
 
-A KiCad plugin that allows you to easily import parts (symbols, footprints, and 3D models) from LCSC directly into KiCad, using the easyeda2kicad command line tool.
+A KiCad plugin that allows you to easily import parts (symbols, footprints, and 3D models) from the LCSC library directly into KiCad, using the easyeda2kicad command line tool.
 
 ### Key Features
 - **Seamless Import**: Quickly import LCSC parts by entering their part number.
