@@ -26,14 +26,23 @@ A KiCad plugin that allows you to easily import parts (symbols, footprints, and 
    Move all contents to your KiCad plugins directory:  
    `KiCad/(version)/scripting/plugins`
 
-3. **Organize the Files**  
+4. **Organize the Files**  
    Ensure `LCSC Importer.py` is not inside any subfolder.
 
-4. **Launch KiCad**  
-   Start KiCad and open the PCB editor. Run the plugin once to initialize.
+5. **Install dependencies**  
+   When you first launch KiCad, you may be missing one or more dependencies to run the plugin inside KiCad. Install these using pip.
+   On Windows you may have to install this through the _KiCad Command Promt_ found in programs/KiCadX/.
 
-5. **Setup Part Libraries**  
-   Follow the instructions for [easyeda2kicad](https://github.com/uPesy/easyeda2kicad.py) to configure the new part libraries in KiCad.
+6. **Run the plugin**  
+   Once all dependencies are installed, run the plugin from the top menu bar in the PCB editor, and import your first component!
+   This will generate the required libraries, KiCad needs to import your parts.
+
+8. **Add libraries in KiCad**  
+  - In KiCad, Go to Preferences > Configure Paths, and add the environment variables `EASYEDA2KICAD` :
+    - Windows : `C:/Users/your_username/Documents/Kicad/easyeda2kicad/`,
+    - Linux : `/home/your_username/Documents/Kicad/easyeda2kicad/`
+  - Go to Preferences > Manage Symbol Libraries, and Add the global library `easyeda2kicad` : `${EASYEDA2KICAD}/easyeda2kicad.kicad_sym`
+  - Go to Preferences > Manage Footprint Libraries, and Add the global library `easyeda2kicad` : `${EASYEDA2KICAD}/easyeda2kicad.pretty`
 
 ---
 
