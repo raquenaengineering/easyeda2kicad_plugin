@@ -24,7 +24,12 @@ A KiCad plugin that allows you to easily import parts (symbols, footprints, and 
 
 2. **Move Files to KiCad Plugin Folder**  
    Move all contents to your KiCad plugins directory:  
-   `KiCad/(version)/scripting/plugins`
+   Windows: `KiCad/(version)/scripting/plugins`
+   Macos: /Users/[USER]/Documents/KiCad/[x.x]/scripting/plugins
+
+3. **Install dependencies (Macos)**
+   Install Pydantic dependency on Macos execute
+   %> /Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/pip3.9 install pydantic
 
 4. **Organize the Files**  
    Ensure `LCSC Importer.py` is not inside any subfolder.
