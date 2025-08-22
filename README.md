@@ -24,16 +24,21 @@ A KiCad plugin that allows you to easily import parts (symbols, footprints, and 
 
 2. **Move Files to KiCad Plugin Folder**  
    Move all contents to your KiCad plugins directory:  
-   `KiCad/(version)/scripting/plugins`
+   Windows: `KiCad/(version)/scripting/plugins`\
+   Macos: `/Users/[USER]/Documents/KiCad/[x.x]/scripting/plugins`
 
-4. **Organize the Files**  
+3. **Install dependencies (Macos)**  
+   Install Pydantic dependency on Macos execute: 
+   `/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/pip3.9 install pydantic`
+
+5. **Organize the Files**  
    Ensure `LCSC Importer.py` is not inside any subfolder.
 
-5. **Install dependencies**  
+6. **Install dependencies**  
    When you first launch KiCad, you may be missing one or more dependencies to run the plugin. Install these using pip.
    On Windows you may have to install them through the _KiCad Command Promt_ found in programs/KiCadX/.
 
-6. **Run the plugin**  
+7. **Run the plugin**  
    Once all dependencies are installed, run the plugin by clicking the LCSC icon in the top menu bar in the PCB editor, and import your first component!
    This will generate the required libraries, KiCad needs to import your parts.
 
