@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "easyeda2kicad_plugin",
+      "type": "plugin",
+      "description": "Import LCSC/EasyEDA parts into KiCad with symbols, footprints, and 3D models.",
+      "author": "rasmushauschild (packaged by raquenaengineering)",
+      "license": "MIT",
+      "repository": "https://github.com/raquenaengineering/easyeda2kicad_plugin",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "url": "https://github.com/raquenaengineering/easyeda2kicad_plugin/archive/refs/heads/main.zip",
+          "sha256": "<PUT_SHA256_CHECKSUM_HERE>"
+        }
+      ]
+    }
+  ]
+}
