@@ -11,9 +11,9 @@
       "repository": "https://github.com/raquenaengineering/easyeda2kicad_plugin",
       "versions": [
         {
-          "version": "0.1.0",
-          "url": "https://github.com/raquenaengineering/easyeda2kicad_plugin/archive/main.zip",
-          "sha256": "97338bace7e9be95e10a6be28a3f4f96a305b58f9b17caeb7f3a5e8864b5beeb"
+          "version": "R0.01",
+          "url": "https://github.com/raquenaengineering/easyeda2kicad_plugin/archive/refs/tags/R0.01.zip",
+          "sha256": "ffd4f6dba1c5390348659a03fa7d4519c95cff20feca59e6e349d734e629db46"
         }
       ]
     }
