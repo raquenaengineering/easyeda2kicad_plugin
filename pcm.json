@@ -1,4 +1,6 @@
 {
+  "name": "raquenaengineering_easyeda2kicad_plugin",
+  "description": "Custom PCM repository for easyeda2kicad_plugin",
   "packages": [
     {
       "name": "easyeda2kicad_plugin",
